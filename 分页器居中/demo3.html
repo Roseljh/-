@@ -1,0 +1,49 @@
+ <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style type="text/css">
+		.content{
+			float: left;
+			width: 100%;			
+			position: relative;
+			background: yellow;		}
+		.content ul{
+			clear: left;
+			float: left;
+			position: relative;
+			left: 50%;
+			text-align: center;
+		}
+		.content li{
+			
+			line-height: 25px;
+			margin: 0 5px;
+			display: block;
+			float: left;
+			position: relative;
+			right: 50%;
+			list-style: none;
+		}
+		.content a{
+			padding: 0 10px;
+			display: block;
+			background: pink;
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+	</div>
+</body>
+</html>

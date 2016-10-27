@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟表格效果</title>
+	<style type="text/css">
+		#main{
+			display: table;/* 让元素以表格形式渲染 */
+			height: 100px;
+			
+			background: pink;
+		}
+		.content{
+			display: table-cell;/* 让元素以表格的单元格形式渲染 */
+			vertical-align:middle;/* 使用元素的垂直对齐 */
+		}
+		/* .table{
+			width: 300px;
+			height: 300px;
+			display: table;
+			position: relative;
+			float: left;
+		}
+		.tableCell{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			*position: absolute;
+			*top: 50%;
+			*left: 50%;
+		}
+		.con{
+			*position: relative;
+			*top: -50%;
+			*left: -50%;
+		} */
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="content">content</div>
+	</div>
+	<!-- 在IE6,7的解决办法 -->
+	<!-- <div class="table">
+		<div class="tableCell">
+			<div class="con">con</div>
+		</div>
+	</div> -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.content{
+			width: 200px;
+			height: 100px;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="content" id="content">
+		<p>平凡创造奇迹，成绩突破梦想</p>
+	</div>
+</body>
+</html>
+<script src="../jquery-1.8.3.js"></script>
+<script>
+	$(document).ready(function(){
+		$(window).resize(function(){
+			$(".content").css({
+				position:"absolute",
+				left:($(window).width()-$(".content").outerWidth())/2,
+				top:($(window).height()-$(".content").outerHeight())/2
+			})
+		})
+		$(window).resize();
+	})
+	/*js*/
+	/*var content=document.getElementById('content');
+	//console.log(content);
+	var w=content.offsetWidth,
+		h=content.offsetHeight;
+	content.style.position="absolute";
+	content.style.left=(document.documentElement.clientWidth-w)/2+"px";
+	content.style.top=(document.documentElement.clientHeight-h)/2+"px";
+*/
+
+
+
+
+	/*jquery*/
+	
+</script>

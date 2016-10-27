@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline-block</title>
+	<style type="text/css">
+		.content{
+			text-align: center;
+		}
+		
+		.content li{
+			display:inline-block;
+			*display: inline;
+			line-height: 25px;
+			margin: 0 5px;
+		}
+		.content a{
+			display: block;
+			padding: 0 10px;
+			background: pink;
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+	</div>
+</body>
+</html>
